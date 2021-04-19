@@ -10,5 +10,4 @@ spec:
     kinds:
       - apiGroups: ["*"]
         kinds: ["Deployment"]
-  parameters:
-    excludedNamespaces : "{{ excludedNamespaces }}"
+
