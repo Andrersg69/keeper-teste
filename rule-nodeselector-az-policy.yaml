@@ -1,0 +1,12 @@
+---
+# Rule para proibir deploy sem o nodeselector
+apiVersion: constraints.gatekeeper.sh/v1beta1
+kind: opaRequiredNodeselector
+metadata:
+  name: oparequirednodeselector
+spec:
+ # enforcementAction: dryrun
+  match:
+    kinds:
+      - apiGroups: ["*"]
+        kinds: ["Deployment"]
